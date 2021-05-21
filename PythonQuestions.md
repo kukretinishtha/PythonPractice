@@ -51,3 +51,29 @@
     13. What are decorator?
         Decorators wrap a function, modifying its behavior. Python allows you to use decorators in a simpler way with the @ symbol. Decorators should use the @functools.wraps decorator, which will preserve information about the original function.
         https://realpython.com/primer-on-python-decorators/
+
+
+### Higher Order functions
+    1. Map function
+        Python’s map() is a built-in function that allows you to process and transform all the items in an iterable without using an explicit for loop, a technique commonly known as mapping. map() is useful when you need to apply a transformation function to each item in an iterable and transform them into a new iterable.
+        ===> map(function, iterator)
+
+    2. Reduce function
+        Python’s reduce() is a function that implements a mathematical technique called folding or reduction. reduce() is useful when you need to apply a function to an iterable and reduce it to a single cumulative value.
+        2.1 Working:
+            2.1.1 Apply a function (or callable) to the first two items in an iterable and  generate a partial result.
+            2.1.2 Use that partial result, together with the third item in the iterable, to generate another partial result.
+            2.1.3 Repeat the process until the iterable is exhausted and then return a single cumulative value.
+            ===> map(function, [iterator1, iterator2, ...])
+
+    3.  Filter function
+            Filtering applies a predicate, or Boolean-valued, function to an iterable and generates a new iterable containing the items that satisfy the Boolean condition.
+            ===> filter(function, iterable)
+
+    4. Anonymous function
+            Anonymous function is a function without a name. In Python, an anonymous function is created with the lambda keyword. More loosely, it may or not be assigned a name. Consider a two-argument anonymous function defined with lambda but not bound to a variable. 
+
+    4. Lambda function
+            A lambda function can take any number of arguments, but can only have one expression.
+            ===> lambda(parameter, expression/function)
+    
