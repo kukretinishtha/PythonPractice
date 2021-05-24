@@ -77,3 +77,78 @@
             A lambda function can take any number of arguments, but can only have one expression.
             ===> lambda(parameter, expression/function)
     
+
+### Python Environments [Dependency and Workspace Management]
+    1. What is pyenv?
+        pyenv is tool that simplifies installing and switching between different versions of Python on the same machine. It keeps the system version of Python intact, which is required for some operating systems to run properly, while still making it easy to switch Python versions based on a specific project's requirements.
+        ** Unfortunately, pyenv does not work on Windows outside the Windows Subsystem for Linux.
+
+    2. Need of Virtual Environment?
+        Virtual environments prevent dependency version conflicts. You can install different versions of the same dependency in different virtual environments.
+
+    3. What is poetry?
+        Poetry is arguably the most feature-rich dependency management tool for Python. It comes with a powerful CLI used for creating and managing Python projects.
+
+    4. What is pip?
+        pip is package installer for python.
+
+    
+### Test-Driven Development in Python
+
+    1. What is conftest.py? 
+        conftest.py file is used for storing pytest fixtures.
+
+    2. What is pytest.py?
+        pytest.ini is a pytest configuration file to the "tests" folder.
+
+    3. What is  Active Record-style model?
+        Active Record-style model provides methods for storing, fetching a single article, and listing all articles.
+
+    4. What are fixtures?
+        To clear the database after each test and create a new one before each test we can use pytest fixtures. These are functions decorated with a @pytest.fixture decorator. They are usually located inside conftest.py but they can be added to the actual test files as well. These functions are executed by default before each test.
+
+    5. What are JSONSchemas?
+        JSON Schemas are used to define the responses from API endpoints.
+
+    6. What is pytest-cov?
+        pytest code coverage is given by pytest-cov?
+
+### Security Vulnerability
+
+    1. What is Bandit?
+        Bandit is a tool designed to find common security issues in Python code such as hardcoded password strings, deserializing untrusted code, using pass in except blocks, to name a few.
+    
+    2. What is Safety?
+        Safety is another tool that comes in handy for keeping your code free of security issues.
+        It's used to check your installed dependencies for known security vulnerabilities against Safety DB, which is a database of known security vulnerabilities in Python packages.
+
+
+### Code Formatters
+    1. What is isort?
+        isort is used to automatically separate imports in your code into the following groups:
+        3.1 standard library
+        3.2 third-party
+        3.3 local
+
+    2. What is Black?
+        Black is a Python code formatter that's used to reformat your code based on the Black's code style guide, which is pretty close to PEP-8.
+
+    3. What is Flake8?
+        Flake8 is a wrapper around Pyflakes, pycodestyle, and McCabe.
+
+
+### Development with Dockerizing Django with Postgres, Gunicorn, and Nginx
+    Follow the Link:
+    https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/
+
+### Securing a Containerized Django application
+    Follow the link:
+    https://testdriven.io/blog/django-lets-encrypt/
+
+### Deploying a Django to AWS
+    Follow the link:
+    https://testdriven.io/blog/django-docker-https-aws/
+
+### Asynchronous Task with Django and
+    Follow the link:
+    https://testdriven.io/blog/django-and-celery/
