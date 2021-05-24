@@ -152,3 +152,13 @@
 ### Asynchronous Task with Django and
     Follow the link:
     https://testdriven.io/blog/django-and-celery/
+
+
+### Handling Periodic Task with Django
+    Follow the link:
+    https://testdriven.io/blog/django-celery-periodic-tasks/
+
+### Automatically retrying celeri Task
+    Follow the link:
+    https://testdriven.io/blog/retrying-failed-celery-tasks/
+    
