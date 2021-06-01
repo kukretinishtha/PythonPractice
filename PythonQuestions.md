@@ -161,4 +161,35 @@
 ### Automatically retrying celeri Task
     Follow the link:
     https://testdriven.io/blog/retrying-failed-celery-tasks/
+
+## Advanced Questions in Python
+    1. Relation between Metaclass, Class and object
+    Metaclass create Classes and Classes creates objects.
+
+    2. What are Process?
+        A process is an instance of a computer program that is being executed. 
+        2.1 An executable program.
+        2.2 The associated data needed by the program (variables, work space, buffers, etc.)
+        2.3 The execution context of the program (State of process)
+
+    3. What are Threads?
+        A thread is an entity within a process that can be scheduled for execution. Also, it is the smallest unit of processing that can be performed in an OS (Operating System).
+        A thread contains all this information in a Thread Control Block (TCB):
+
+        Thread Identifier: Unique id (TID) is assigned to every new thread
+        Stack pointer: Points to thread’s stack in the process. Stack contains the local variables under thread’s scope.
+        Program counter: a register which stores the address of the instruction currently being executed by thread.
+        Thread state: can be running, ready, waiting, start or done.
+        Thread’s register set: registers assigned to thread for computations.
+        Parent process Pointer: A pointer to the Process control block (PCB) of the process that the thread lives on.
+
+        Multiple threads can exist within one process where:
+
+        Each thread contains its own register set and local variables (stored in stack).
+        All thread of a process share global variables (stored in heap) and the program code.
+
+        https://www.geeksforgeeks.org/multithreading-python-set-1/?ref=lbp
+
+    4. What is Multithreading?
+        Multithreading is defined as the ability of a processor to execute multiple threads concurrently.
     
