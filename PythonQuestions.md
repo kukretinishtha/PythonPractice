@@ -164,7 +164,7 @@
 
 ## Advanced Questions in Python
     1. Relation between Metaclass, Class and object
-    Metaclass create Classes and Classes creates objects.
+        create Classes and Classes creates objects.
 
     2. What are Process?
         A process is an instance of a computer program that is being executed. 
@@ -193,3 +193,19 @@
     4. What is Multithreading?
         Multithreading is defined as the ability of a processor to execute multiple threads concurrently.
     
+### Data Science Questions
+    1. What are the benefits to vectorization?
+        1. Using vectorization saves you the work of writing loops.
+
+        2. NumPy are written in languages like C++, which are less convenient to code in, but produce faster-running results. So if you can have NumPy automatically loop over your data, rather than writing a loop in Python, the code will execute faster.
+
+    2. What is Binding arguments in the function?
+        When some parameters values are fixed and dont change throughout the lifetime of code. Then the such arg are called Binding arguments in the function.
+
+    3. What is partial tool in python?
+        The partial tool built into Python only works if you want to bind the first arguments of the function. If you need to bind later ones, then you can do it yourself using a lambda.
+
+    4. What is the diffrence between model and fit model?
+        Models are general descriptions of how a real-world system behaves, typically expressed using mathematical formulas. Each model can be used on many datasets, and a statistician or data scientist does the work of choosing the model they think suits their data.
+        A fit model is the specific version of the general model that’s been tailored to suit your data. We create it from the general model by binding the values of the βs to specific numbers.
+        
