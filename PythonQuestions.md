@@ -1,3 +1,118 @@
+### Python Basics
+    1. What are different Data Types in Python?
+        1. Text Type: 	str
+        2. Numeric Types: 	int, float, complex
+        3. Sequence Types: 	list, tuple, range
+        4. Mapping Type: 	dict
+        5. Set Types: 	set, frozenset
+        6. Boolean Type: 	bool
+        7. Binary Types: 	bytes, bytearray, memoryview
+
+    2. Examples of Boolean values which will return false
+        bool(False)
+        bool(None)
+        bool(0)
+        bool("")
+        bool(())
+        bool([])
+        bool({})
+
+    3. What ae python arithmetic operators?
+        Arithmetic operators are used with numeric values to perform common mathematical operations:
+        + 	Addition 	x + y 	
+        - 	Subtraction 	x - y 	
+        * 	Multiplication 	x * y 	
+        / 	Division 	x / y 	
+        % 	Modulus 	x % y 	
+        ** 	Exponentiation 	x ** y 	
+        // 	Floor division 	x // y
+
+    4. What are assignment operators?
+        Assignment operators are used to assign values to variables:
+        = 	x = 5 	x = 5 	
+        += 	x += 3 	x = x + 3 	
+        -= 	x -= 3 	x = x - 3 	
+        *= 	x *= 3 	x = x * 3 	
+        /= 	x /= 3 	x = x / 3 	
+        %= 	x %= 3 	x = x % 3 	
+        //= 	x //= 3 	x = x // 3 	
+        **= 	x **= 3 	x = x ** 3 	
+        &= 	x &= 3 	x = x & 3 	
+        |= 	x |= 3 	x = x | 3 	
+        ^= 	x ^= 3 	x = x ^ 3 	
+        >>= 	x >>= 3 	x = x >> 3 	
+        <<= 	x <<= 3 	x = x << 3
+
+    5. What are compaarison operators?
+        Comparison operators are used to compare two values:
+        == 	Equal 	x == y 	
+        != 	Not equal 	x != y 	
+        > 	Greater than 	x > y 	
+        < 	Less than 	x < y 	
+        >= 	Greater than or equal to 	x >= y 	
+        <= 	Less than or equal to 	x <= y
+
+    6. What are logical operators?
+        Logical operators are used to combine conditional statements:
+            and  	Returns True if both statements are true 	x < 5 and  x < 10 	
+            or 	Returns True if one of the statements is true 	x < 5 or x < 4 	
+            not 	Reverse the result, returns False if the result is true 	not(x < 5 and x < 10)
+
+    7. What are identity operrators?
+        Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:
+
+            is  	Returns True if both variables are the same object 	x is y 	
+            is not 	Returns True if both variables are not the same object 	x is not y
+
+    8. What are membership operators?
+        Membership operators are used to test if a sequence is presented in an object:
+        
+            in  	Returns True if a sequence with the specified value is present in the object xin y 	
+            not in 	Returns True if a sequence with the specified value is not present in the object 	x not in y
+
+    9. What are Python Bitwise Operators?
+        Bitwise operators are used to compare (binary) numbers:
+
+            &  	AND 	Sets each bit to 1 if both bits are 1
+            | 	OR 	Sets each bit to 1 if one of two bits is 1
+            ^ 	XOR 	Sets each bit to 1 if only one of two bits is 1
+            ~  	NOT 	Inverts all the bits
+            << 	Zero fill left shift 	Shift left by pushing zeros in from the right and let the leftmost bits fall off
+            >> 	Signed right shift 	Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
+
+    10. What are Collections?
+        There are four collection data types in the Python programming language:
+            List is a collection which is ordered and changeable. Allows duplicate members.
+            Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+            Set is a collection which is unordered and unindexed. No duplicate members.
+            Dictionary is a collection which is ordered* and changeable. No duplicate members.
+
+    11. List methods?
+        append()	Adds an element at the end of the list
+        clear()	Removes all the elements from the list
+        copy()	Returns a copy of the list
+        count()	Returns the number of elements with the specified value
+        extend()	Add the elements of a list (or any iterable), to the end of the current list
+        index()	Returns the index of the first element with the specified value
+        insert()	Adds an element at the specified position
+        pop()	Removes the element at the specified position
+        remove()	Removes the item with the specified value
+        reverse()	Reverses the order of the list
+        sort()	Sorts the list
+
+    12. Dictionary Methods?
+        clear()	Removes all the elements from the dictionary
+        copy()	Returns a copy of the dictionary
+        fromkeys()	Returns a dictionary with the specified keys and value
+        get()	Returns the value of the specified key
+        items()	Returns a list containing a tuple for each key value pair
+        keys()	Returns a list containing the dictionary's keys
+        pop()	Removes the element with the specified key
+        popitem()	Removes the last inserted key-value pair
+        setdefault()	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+        update()	Updates the dictionary with the specified key-value pairs
+        values()	Returns a list of all the values in the dictionary
+        
 ### MVC architecture
     1. A user requests to view a page by entering a URL.
     2. The application matches the URL to a predefined route.
